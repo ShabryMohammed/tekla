@@ -21,7 +21,7 @@ export default function ServicesSection() {
 
       {/* Top Black Bar */}
       <div className="absolute top-0 left-0 w-full bg-black py-6 px-4 z-10">
-        <h2 className="text-white text-3xl md:text-7xl font-light text-center">
+        <h2 className="text-white text-3xl md:text-7xl font-normal text-center">
           Our Services <span className="inline-block w-32 h-px bg-white ml-4 align-middle"></span>
         </h2>
       </div>

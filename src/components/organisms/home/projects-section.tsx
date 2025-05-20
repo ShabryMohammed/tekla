@@ -68,7 +68,7 @@ export default function ProjectsSection() {
         {/* Header section with title and description */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-18 mb-36">
           <div>
-            <h2 className="text-4xl md:text-7xl font-light mb-4 text-center border-b-2 border-white pb-20">Our Completed <br /> Projects</h2>
+            <h2 className="text-4xl md:text-7xl font-medium mb-4 text-center border-b-2 border-white pb-20">Our Completed <br /> Projects</h2>
           </div>
           <div>
             <p className="text-sm text-gray-300 w-lg py-10">

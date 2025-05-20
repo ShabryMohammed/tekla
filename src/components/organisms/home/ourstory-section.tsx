@@ -7,8 +7,8 @@ export default function OurStorySection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6">
           {/* Left column with heading and text */}
           <div className="lg:col-span-3 flex flex-col text-center">
-            <h2 className="text-4xl md:text-7xl font-light mb-4">Our </h2>
-            <h2 className="text-4xl md:text-7xl font-light mb-4">Story</h2>
+            <h2 className="text-4xl md:text-7xl font-medium mb-4">Our </h2>
+            <h2 className="text-4xl md:text-7xl font-medium mb-4">Story</h2>
             <div className="border-t-2 border-white w-full my-12"></div>
             <div className="space-y-6 mt-2">
               <p className="text-sm text-left">
