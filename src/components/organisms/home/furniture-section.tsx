@@ -1,6 +1,5 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, MoveRight } from "lucide-react"
 
 export default function FurnitureSection() {
   return (
@@ -77,7 +76,7 @@ export default function FurnitureSection() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="#"
+              href="/furniture"
               className="flex items-center justify-between gap-4 pl-4 pr-1 -py-1 border-3 w-[220px] h-[52px] border-yellow-400 rounded-full text-gray-800 hover:bg-gray-300 transition-colors duration-300"
             >
               Explore More

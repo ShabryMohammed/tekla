@@ -18,7 +18,7 @@ export default function CraftsmanshipSection() {
         </div>
 
         {/* Content Section */}
-<div className="bg-[#0d3b2a] text-white p-8  flex items-center">
+<div className="bg-[#0D2821] text-white p-8  flex items-center">
   <div className="max-w-lg text-start ">
     <h2
       className="text-3xl md:text-2xl lg:text-3xl  xl:text-4xl font-light mb-6"

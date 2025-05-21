@@ -3,12 +3,12 @@ import Image from "next/image"
 export default function MaterialsAndFinishes() {
   return (
     <div className="min-h-screen bg-black flex items-center justify-center p-4 md:p-8">
-      <div className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <div className="w-full max-w-7xl h-full grid grid-cols-1 lg:grid-cols-2 gap-4 mt-60 mb-40">
         {/* Left Panel */}
-        <div className="bg-[#1e4d3b] p-8 md:p-12 flex flex-col justify-center">
-          <h1 className="text-3xl md:text-4xl text-white font-light mb-8">Materials & Finishes</h1>
+        <div className="bg-[#183932] px-8 md:px-12 flex flex-col justify-center py-40">
+          <h1 className="text-3xl md:text-4xl text-white font-light mb-22 text-center">Materials & Finishes</h1>
 
-          <p className="text-white/90 text-sm md:text-base leading-relaxed">
+          <p className="text-white/90 text-sm md:text-base text-center leading-relaxed">
             Browse our collection of customizable furniture across styles and categories. Choose your size, materials,
             finish, or design options, or start from scratch with your own idea. From coffee tables to dining tables, we
             bring your furniture dreams to life.

@@ -7,7 +7,6 @@ import FurnitureSection from "@/components/organisms/home/furniture-section";
 import TestimonialSection from "@/components/organisms/home/testimonial-section";
 import ContactForm from "@/components/organisms/home/contactform-section";
 import ContactUs from "@/components/organisms/home/contactus-section";
-import Footer from "@/components/molecules/footer";
 import LocationSection from "@/components/organisms/home/map-section";
 import DesignProcess from "@/components/organisms/home/design-section";
 
@@ -25,7 +24,6 @@ export default function Home() {
       <ContactForm />
       <ContactUs />
       <LocationSection />
-      <Footer />
     </>
   );
 }
