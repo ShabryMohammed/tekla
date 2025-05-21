@@ -77,7 +77,7 @@ export default function FurnitureSection() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="#"
+              href="/furniture"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-gray-300 rounded-full text-gray-800 hover:bg-gray-300 transition-colors"
             >
               Explore More
