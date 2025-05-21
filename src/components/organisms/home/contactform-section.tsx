@@ -56,10 +56,10 @@ export default function ContactForm() {
             <div className="ml-26 mt-18">
             <button
                 type="submit"
-                className="flex items-center justify-center gap-2 bg-[#e9c85d] text-black font-medium py-3 px-8 rounded-full hover:bg-[#d4b64a] transition-colors"
+                className="flex items-center justify-between gap-4 pl-4 pr-1 -py-1 bg-[#e9c85d] text-black font-medium py-1 px-8 rounded-full hover:bg-[#d4b64a] transition-colors"
               >
                 SEND REQUEST
-                <Image src="/arrow.png" alt="Arrow Right" width={26} height={26} />
+                <Image src="/arrow.png" alt="Arrow Right" width={40} height={40} />
               </button>
               </div>
           </div>
