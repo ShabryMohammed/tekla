@@ -77,18 +77,18 @@ export default function FurnitureSection() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/furniture"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-gray-300 rounded-full text-gray-800 hover:bg-gray-300 transition-colors"
+              href="#"
+              className="flex items-center justify-between gap-4 pl-4 pr-1 -py-1 border-3 w-[220px] h-[52px] border-yellow-400 rounded-full text-gray-800 hover:bg-gray-300 transition-colors duration-300"
             >
               Explore More
-              <Image src="/arrow.png" alt="Arrow Right" width={26} height={26} />
+              <Image src="/arrow.png" alt="Arrow Right" width={40} height={40} />
             </Link>
             <Link
               href="#"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-amber-400 rounded-full text-gray-800 hover:bg-amber-500 transition-colors uppercase font-medium"
+              className="flex items-center justify-between gap-4 pl-4 pr-1 -py-1 border-3 border-[#E5C767] bg-yellow-400 text-black rounded-full w-[280px] h-[52px] hover:bg-yellow-500 hover:text-black transition-colors duration-300"
             >
               Customize Your Furniture
-              <Image src="/arrow.png" alt="Arrow Right" width={26} height={26} />
+              <Image src="/arrow.png" alt="Arrow Right" width={40} height={40} />
             </Link>
           </div>
         </div>

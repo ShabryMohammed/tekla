@@ -9,6 +9,7 @@ import ContactForm from "@/components/organisms/home/contactform-section";
 import ContactUs from "@/components/organisms/home/contactus-section";
 import Footer from "@/components/molecules/footer";
 import LocationSection from "@/components/organisms/home/map-section";
+import DesignProcess from "@/components/organisms/home/design-section";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <OurStorySection />
       <ServicesSection />
       <ProjectsSection />
+      <DesignProcess />
       <FurnitureSection />
       <TestimonialSection />
       <ContactForm />

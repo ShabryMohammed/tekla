@@ -4,9 +4,9 @@ export default function OurStorySection() {
   return (
     <section className="bg-black text-white py-12 px-4 md:px-8 lg:px-12">
       <div className="max-w-5xl mx-auto md:mt-36">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
           {/* Left column with heading and text */}
-          <div className="lg:col-span-3 flex flex-col text-center">
+          <div className="lg:col-span-3 flex flex-col text-center -mx-10">
             <h2 className="text-4xl md:text-7xl font-medium mb-4">Our </h2>
             <h2 className="text-4xl md:text-7xl font-medium mb-4">Story</h2>
             <div className="border-t-2 border-white w-full my-12"></div>
@@ -63,9 +63,9 @@ export default function OurStorySection() {
 
               {/* Learn More button */}
               <div className="flex justify-start items-center gap-4">
-                <button className="flex items-center gap-6 bg-transparent border-2 border-yellow-500 text-white px-14 rounded-full">
+                <button className="flex items-center justify-between gap-4 pl-4 pr-1 py-2 border-3 border-[#E5C767] text-white rounded-full transition-colors w-[280px] h-[52px]">
                   <span>Learn More</span>
-                  <div className="rounded-full p-1">
+                  <div className="rounded-full">
                     <Image
                     src="/arrow.png"
                     alt="Arrow icon"

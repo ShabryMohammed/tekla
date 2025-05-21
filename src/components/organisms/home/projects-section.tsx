@@ -92,9 +92,9 @@ export default function ProjectsSection() {
                   <h3 className="text-2xl font-light mb-4">{project.title}</h3>
                   <p className="text-sm text-gray-300 mb-6">{project.description}</p>
                   <div>
-                    <button className="bg-transparent border border-[#E5C767] text-white px-4 py-2 rounded-full flex items-center space-x-2 hover:bg-yellow-500 hover:text-black transition-colors duration-300">
+                    <button className="flex items-center justify-between gap-4 pl-4 pr-1 py-2 border-3 border-[#E5C767] text-white rounded-full w-[250px] h-[52px] hover:bg-yellow-500 hover:text-black transition-colors duration-300">
                       <span>Explore our Project</span>
-                      <Image src="/arrow.png" alt="Arrow Right" width={26} height={26} />
+                      <Image src="/arrow.png" alt="Arrow Right" width={40} height={40} />
                     </button>
                   </div>
                 </div>
