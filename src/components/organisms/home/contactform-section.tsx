@@ -1,3 +1,4 @@
+import ParallaxSection from "@/components/parallax/parallax-section"
 import Image from "next/image"
 
 export default function ContactForm() {
@@ -64,41 +65,43 @@ export default function ContactForm() {
               </div>
           </div>
 
-<div className="relative w-full min-h-[600px]">
-  {/* Text Content */}
-  <div className="absolute inset-0 z-10 p-6 md:p-12 lg:p-16 flex flex-col justify-start">
-    <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-4 md:mb-8">
-      Let&apos;s Discuss
-      <br />
-      your project
-    </h2>
-    <p className="text-white/80 text-sm md:text-base max-w-lg">
-      where your space becomes a masterpiece. We specialize in custom interior design solutions that are
-      stylish, functional, and uniquely yours. Whether it&apos;s a home, office, or commercial space - we turn
-      your vision into reality.
-    </p>
-  </div>
+            <div className="relative w-full min-h-[600px]">
+              {/* Text Content */}
+              <div className="absolute inset-0 z-10 p-6 md:p-12 lg:p-16 flex flex-col justify-start">
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-4 md:mb-8">
+                  Let&apos;s Discuss
+                  <br />
+                  your project
+                </h2>
+                <p className="text-white/80 text-sm md:text-base max-w-lg">
+                  where your space becomes a masterpiece. We specialize in custom interior design solutions that are
+                  stylish, functional, and uniquely yours. Whether it&apos;s a home, office, or commercial space - we turn
+                  your vision into reality.
+                </p>
+              </div>
 
-  {/* Sofa Image */}
-  <Image
-    src="/sofa.png"
-    alt="Interior design showcase with a leather sofa and side table"
-    width={1000}
-    height={900}
-    className="absolute z-20 top-[40%] md:top-[50%] w-[80%] md:w-[700px] left-[60%] md:left-1/2 -translate-x-1/2"
-    priority
-  />
+              {/* Sofa Image */}
+              <ParallaxSection type="slide-from-right" speed={1.2}>
+              <Image
+                src="/sofa.png"
+                alt="Interior design showcase with a leather sofa and side table"
+                width={1000}
+                height={900}
+                className="absolute z-20 top-[40%] md:top-[50%] w-[80%] md:w-[700px] left-[60%] md:left-1/2 -translate-x-1/2"
+                priority
+              />
 
-  {/* Stool Image */}
-  <Image
-    src="/stool.png"
-    alt="Interior design showcase with a leather sofa and side table"
-    width={400}
-    height={400}
-    className="absolute z-20 top-[30%] md:top-[33%] sm:left-auto sm:right-[80%] w-[200px] md:w-[400px]"
-    priority
-  />
-</div>
+              {/* Stool Image */}
+              <Image
+                src="/stool.png"
+                alt="Interior design showcase with a leather sofa and side table"
+                width={400}
+                height={400}
+                className="absolute z-20 top-[30%] md:top-[33%] sm:left-auto sm:right-[80%] w-[200px] md:w-[400px]"
+                priority
+              />
+              </ParallaxSection>
+            </div>
 
         </div>
       </section>

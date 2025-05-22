@@ -1,5 +1,6 @@
 "use client"
 
+import ParallaxSection from "@/components/parallax/parallax-section"
 import { useRef, useEffect } from "react"
 
 export default function ServicesSection() {
@@ -12,7 +13,7 @@ export default function ServicesSection() {
   }, [])
 
   return (
-    <div className="relative w-full h-[800px] overflow-hidden">
+    <div className="relative w-full h-[800px] overflow-hidden mt-40">
       {/* Background Video */}
       <video ref={videoRef} autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover">
         <source src="/mp4.mp4" type="video/mp4" />
@@ -29,6 +30,7 @@ export default function ServicesSection() {
       {/* Services Glass Panel */}
       <div className="absolute right-8 top-1/2 transform -translate-y-1/2 z-10 w-full max-w-[320px] md:max-w-[380px] backdrop-blur-md rounded-3xl overflow-hidden">
         <div className="p-6 md:p-8 border border-white">
+          <ParallaxSection type="slide-from-right" speed={1.2}>
           <ul className="space-y-4">
             <li className="border-b border-gray-300/50 pb-4">
               <h3 className="text-[#0D1110] text-lg md:text-xl font-medium">Office design</h3>
@@ -49,6 +51,7 @@ export default function ServicesSection() {
               <h3 className="text-[#0D1110] text-lg md:text-xl font-medium">Virtual Design Consultations</h3>
             </li>
           </ul>
+          </ParallaxSection>
         </div>
       </div>
 

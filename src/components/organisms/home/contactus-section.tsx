@@ -1,3 +1,4 @@
+import ParallaxSection from "@/components/parallax/parallax-section"
 import Image from "next/image"
 
 export default function ContactUs() {
@@ -10,6 +11,7 @@ export default function ContactUs() {
         </div>
         <div className="flex items-center gap-20 md:gap-40">
           <div className="relative h-[300px] md:h-[600px]">
+            <ParallaxSection type="slide-from-left" speed={1.2}>
             <Image
               src="/couch.png"
               alt="Yellow sofa"
@@ -17,7 +19,10 @@ export default function ContactUs() {
               height={300}
               className="object-contain object-left"
             />
+            </ParallaxSection>
           </div>
+
+          <ParallaxSection type="slide-from-right" speed={1.2}>
           <div className="space-y-8 w-lg">
             <div className="space-y-16 mt-12">
               <div>
@@ -36,6 +41,7 @@ export default function ContactUs() {
               </div>
             </div>
           </div>
+          </ParallaxSection>
         </div>
       </div>
     </div>

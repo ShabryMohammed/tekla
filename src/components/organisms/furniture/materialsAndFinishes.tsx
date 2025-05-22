@@ -1,3 +1,4 @@
+import ParallaxSection from "@/components/parallax/parallax-section"
 import Image from "next/image"
 
 export default function MaterialsAndFinishes() {
@@ -6,6 +7,7 @@ export default function MaterialsAndFinishes() {
       <div className="w-full max-w-7xl h-full grid grid-cols-1 lg:grid-cols-2 gap-4 mt-60 mb-40">
         {/* Left Panel */}
         <div className="bg-[#183932] px-8 md:px-12 flex flex-col justify-center py-40">
+          <ParallaxSection type="slide-from-left" speed={1.2}>
           <h1 className="text-3xl md:text-4xl text-white font-light mb-22 text-center">Materials & Finishes</h1>
 
           <p className="text-white/90 text-sm md:text-base text-center leading-relaxed">
@@ -13,12 +15,14 @@ export default function MaterialsAndFinishes() {
             finish, or design options, or start from scratch with your own idea. From coffee tables to dining tables, we
             bring your furniture dreams to life.
           </p>
+          </ParallaxSection>
         </div>
 
         {/* Right Panel - Grid of Options */}
         <div className="grid grid-cols-2 gap-4">
           {/* Solid Wood Options */}
           <div className="flex flex-col items-center justify-center text-center p-4">
+            <ParallaxSection type="slide-from-right" speed={1.2}>
             <div className="mb-4">
               <Image
                 src="/furnitureWebsite/MaterialsAndFinishes/solidWoodOption.png"
@@ -30,10 +34,12 @@ export default function MaterialsAndFinishes() {
             </div>
             <h3 className="text-white font-light text-sm md:text-base">Solid Wood</h3>
             <p className="text-white font-light text-sm md:text-base">Options</p>
+            </ParallaxSection>
           </div>
 
           {/* Upholstery & Fabrics */}
           <div className="flex flex-col items-center justify-center text-center p-4">
+            <ParallaxSection type="slide-from-right" speed={1.2}>
             <div className="mb-4">
               <Image
                 src="/furnitureWebsite/MaterialsAndFinishes/UpholsteryAndFabrics.png"
@@ -45,10 +51,12 @@ export default function MaterialsAndFinishes() {
             </div>
             <h3 className="text-white font-light text-sm md:text-base">Upholstery &</h3>
             <p className="text-white font-light text-sm md:text-base">Fabrics</p>
+            </ParallaxSection>
           </div>
 
           {/* Color Stains & Paints */}
           <div className="flex flex-col items-center justify-center text-center p-4">
+            <ParallaxSection type="slide-from-right" speed={1.2}>
             <div className="mb-4">
               <Image
                 src="/furnitureWebsite/MaterialsAndFinishes/ColorStainsAndPaints.png"
@@ -60,10 +68,12 @@ export default function MaterialsAndFinishes() {
             </div>
             <h3 className="text-white font-light text-sm md:text-base">Color Stains &</h3>
             <p className="text-white font-light text-sm md:text-base">Paints</p>
+            </ParallaxSection>
           </div>
 
           {/* Hardware & Accessories */}
           <div className="flex flex-col items-center justify-center text-center p-4">
+            <ParallaxSection type="slide-from-right" speed={1.2}>
             <div className="mb-4">
               <Image
                 src="/furnitureWebsite/MaterialsAndFinishes/HardwareAndAccessories.png"
@@ -75,7 +85,9 @@ export default function MaterialsAndFinishes() {
             </div>
             <h3 className="text-white font-light text-sm md:text-base">Hardware &</h3>
             <p className="text-white font-light text-sm md:text-base">Accessories</p>
+            </ParallaxSection>
           </div>
+          
         </div>
       </div>
     </div>
