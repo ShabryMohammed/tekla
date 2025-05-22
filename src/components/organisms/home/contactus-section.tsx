@@ -4,7 +4,7 @@ export default function ContactUs() {
   return (
     <div className="relative w-full bg-black text-white min-h-[500px] flex items-center">
       <div className="container py-12 md:py-24 mt-56 mb-28">
-        <div className="flex items-center space-x-10 px-20 mb-20">
+        <div className="flex items-center space-x-10 md:px-20 mb-20">
           <div className="h-px bg-white w-2/5" />
           <h2 className="text-3xl md:text-7xl font-medium">Contact us</h2>
         </div>
@@ -18,7 +18,7 @@ export default function ContactUs() {
               className="object-contain object-left"
             />
           </div>
-          <div className="space-y-8">
+          <div className="space-y-8 w-lg">
             <div className="space-y-16 mt-12">
               <div>
                 <p className="text-xl text-white mb-4">Call us at</p>

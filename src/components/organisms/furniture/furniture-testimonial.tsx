@@ -84,7 +84,7 @@ export default function TestimonialCarousel() {
           switch to final delivery.
         </p>
 
-        <div className="grid md:grid-cols-2 gap-18 relative">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-18 lg:gap-18 relative">
           {/* Image Section */}
           <div className="relative overflow-hidden rounded-lg h-[300px] md:h-[400px] lg:h-[450px]">
             <div className="carousel-container absolute w-full h-full ">
@@ -132,7 +132,7 @@ export default function TestimonialCarousel() {
               </Button>
             </div>
 
-            <div className="relative h-[250px] md:h-[300px] overflow-hidden mb-[300px]">
+            <div className="relative h-[350px] md:h-[350px] overflow-hidden mb-[150px] md:mb-[300px]">
               {testimonials.map((testimonial, index) => (
                 <div
                   key={testimonial.id}
@@ -148,7 +148,7 @@ export default function TestimonialCarousel() {
 
                   <blockquote className="text-lg md:text-xl mb-8 text-center justify-center">&quot;{testimonial.quote}&quot;</blockquote>
 
-                    <div className="flex flex-col items-center text-center">
+                    <div className="flex flex-col items-center text-center mt-16">
                     <Image
                       src={testimonial.image || "/placeholder.svg"}
                         alt="Testimonial Author"

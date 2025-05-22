@@ -64,7 +64,7 @@ export default function DesignProcess() {
         {/* Timeline */}
         <div className="relative">
           {/* Center Line */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-[2px] bg-white"></div>
+          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-[2px] bg-white"></div>
 
           {/* Steps */}
           <div className="relative z-10">
@@ -92,7 +92,7 @@ export default function DesignProcess() {
                 </div>
 
                 {/* Timeline Dot */}
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-white rounded-full border-4 border-black"></div>
+                <div className=" hidden md:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-white rounded-full border-4 border-black"></div>
 
                 {/* Content */}
                 <div

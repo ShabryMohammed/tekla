@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 
-export default function costomize_Section() {
+export default function CustomizeSection() {
   return (
     <div className="min-h-screen bg-black text-white flex flex-col items-center justify-start p-4 mt-20 mx-10">
       <div className="text-center space-y-4 mb-8">

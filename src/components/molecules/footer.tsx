@@ -25,9 +25,7 @@ export default function Footer() {
                     alt={icon.name}
                     width={24}
                     height={24}
-                    style={{
-                      objectFit: "contain",
-                    }}
+                    style={{ objectFit: "contain" }}
                   />
                 </div>
                 <span className="sr-only">{icon.name}</span>
@@ -35,10 +33,12 @@ export default function Footer() {
             ))}
           </div>
         </div>
+      </div>
 
-        {/* Divider */}
-        <div className="border-t-4 border-white my-4"></div>
+      {/* Full-Width Divider */}
+      <div className="border-t-4 border-white w-full"></div>
 
+      <div className="container mx-auto py-6">
         {/* Copyright and Links Section */}
         <div className="flex flex-col md:flex-row justify-between items-center pt-4 mb-6">
           <div className="mb-4 md:mb-0 text-sm">© {new Date().getFullYear()} Tekla. All rights reserved.</div>

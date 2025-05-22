@@ -1,9 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
-import { div } from "framer-motion/client"
-
 export default function Home() {
   return (
     <main className="relative min-h-screen w-full">
@@ -40,7 +37,7 @@ export default function Home() {
       style={{ fontFamily: "Montserrat" }}
     >
       Where your space becomes a masterpiece. We specialize in custom interior design solutions that are
-      stylish, functional, and uniquely yours. Whether it's a home, office, or commercial space - we turn your
+      stylish, functional, and uniquely yours. Whether it&apos;s a home, office, or commercial space - we turn your
       vision into reality.
     </p>
 
@@ -145,38 +142,35 @@ export default function Home() {
 </div>
 
 
-        <div className="w-full bg-[#0D2821] py-8 text-white z-10">
-          <div
-            className="container mx-auto px-4 md:px-6 gap-[20px] lg:gap-[40px] xl:gap-[130px]"
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(4, 150px)", // each column 150px wide
-              
-              justifyContent: "center", // center the whole grid in container
-            }}
-          >
-            {[
-              { value: "17+", label: "Years of work of\nour agency" },
-              { value: "30+", label: "architectural\nprojects" },
-              { value: "50+", label: "Happy clients" },
-              { value: "200+", label: "created unique\ninteriors" },
-            ].map(({ value, label }, idx) => (
-              <div key={idx} className="flex flex-col items-center">
-                <h3 className="text-5xl md:text-3xl lg:text-4xl font-light text-center" style={{ fontFamily: "Ysabeau" }}>
-                  {value}
-                </h3>
+    <div className="w-full bg-[#0D2821] py-8 text-white z-10">
+          <div className="container mx-auto px-4 md:px-40">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-[20px] lg:gap-[40px] xl:gap-[130px] justify-center">
+              {[
+                { value: "17+", label: "Years of work of\nour agency" },
+                { value: "30+", label: "architectural\nprojects" },
+                { value: "50+", label: "Happy clients" },
+                { value: "200+", label: "created unique\ninteriors" },
+              ].map(({ value, label }, idx) => (
+                <div key={idx} className="flex flex-col items-center">
+                  <h3 className="text-4xl md:text-3xl lg:text-4xl font-light text-center" style={{ fontFamily: "Ysabeau" }}>
+                    {value}
+                  </h3>
 
-                <div className="relative mt-4 mb-1 w-full flex justify-center">
-                  <div className="w-[6rem] h-px bg-white"></div>
-                </div>
+                  <div className="relative mt-4 mb-1 w-full flex justify-center">
+                    <div className="w-[6rem] h-px bg-white"></div>
+                  </div>
 
-                <div className="mt-2 w-[6rem]">
-                  <p className="text-[8px]  lg:text-[11px] leading-snug whitespace-pre-line text-left" style={{ fontFamily: "Montserrat" }}>
-                    {label}
-                  </p>
+                  <div className="mt-2 w-[6rem]">
+                    <p
+                      className="text-[10px] md:text-[8px] lg:text-[11px] leading-snug whitespace-pre-line text-left"
+                      style={{ fontFamily: "Montserrat" }}
+                    >
+                      {label}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -71,7 +71,7 @@ export default function ProjectsSection() {
             <h2 className="text-4xl md:text-7xl font-medium mb-4 text-center border-b-2 border-white pb-20">Our Completed <br /> Projects</h2>
           </div>
           <div>
-            <p className="text-sm text-gray-300 w-lg py-10">
+            <p className="text-sm text-gray-300 md:w-lg py-10">
               Where your space becomes a masterpiece. We specialize in elegant interior design solutions that are
               stylish, functional, and uniquely yours. Whether it&apos;s a home, office, or commercial space—we turn your
               vision into reality. Our experienced team is dedicated to transforming ordinary spaces into extraordinary

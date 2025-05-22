@@ -6,31 +6,26 @@ export default function OurStorySection() {
       <div className="max-w-5xl mx-auto md:mt-36">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
           {/* Left column with heading and text */}
-          <div className="lg:col-span-3 flex flex-col text-center -mx-10">
-            <h2 className="text-4xl md:text-7xl font-medium mb-4">Our </h2>
+          <div className="lg:col-span-3 flex flex-col text-center px-4 sm:px-6 md:px-0 md:-mx-10">
+            <h2 className="text-4xl md:text-7xl font-medium mb-2 md:mb-4">Our </h2>
             <h2 className="text-4xl md:text-7xl font-medium mb-4">Story</h2>
-            <div className="border-t-2 border-white w-full my-12"></div>
-            <div className="space-y-6 mt-2">
-              <p className="text-sm text-left">
-                With over 10 years of experience, our team of passionate designers has transformed hundreds of spaces
-                with creativity and precision. We believe great design balances beauty with purpose, and every detail
-                matters.
+
+            <div className="border-t-2 border-white w-full max-w-xs mx-auto md:max-w-none md:w-full my-8 md:my-12"></div>
+
+            <div className="space-y-4 md:space-y-6 mt-2 px-4 sm:px-6 md:px-0">
+              <p className="text-sm text-left leading-relaxed sm:text-base">
+                With over 10 years of experience, our team of passionate designers has transformed hundreds of spaces with
+                creativity and precision. We believe great design balances beauty with purpose, and every detail matters.
               </p>
-              <p className="text-sm text-left">
-                With over 10 years of experience, our team of passionate designers has transformed hundreds of spaces
-                with creativity and precision. We believe great design balances beauty with purpose, and every detail
-                matters.
+              <p className="text-sm text-left leading-relaxed sm:text-base">
+                With over 10 years of experience, our team of passionate designers has transformed hundreds of spaces with
+                creativity and precision. We believe great design balances beauty with purpose, and every detail matters.
               </p>
             </div>
 
             {/* Bottom left image (only visible on larger screens) */}
             <div className="hidden md:block mt-16 relative rounded-lg overflow-hidden aspect-[3/3]">
-              <Image
-                src="/ourstory/s3.png"
-                alt="Cozy living space with sofa"
-                fill
-                className="object-cover rounded-3xl"
-              />
+              <Image src="/ourstory/s3.png" alt="Cozy living space with sofa" fill className="object-cover rounded-3xl" />
             </div>
           </div>
 
@@ -61,17 +56,11 @@ export default function OurStorySection() {
                 <p className="text-xs text-gray-300">The beauty in living <br /> the finer life.</p>
               </div>
 
-              {/* Learn More button */}
-              <div className="flex justify-start items-center gap-4">
-                <button className="flex items-center justify-between gap-4 pl-4 pr-1 py-2 border-3 border-[#E5C767] text-white rounded-full transition-colors w-[280px] h-[52px]">
+              <div className="flex justify-center md:justify-start items-center gap-4 w-full">
+                <button className="flex items-center justify-between gap-4 pl-4 pr-1 py-2 border-3 border-[#E5C767] text-white rounded-full transition-colors w-[280px] h-[52px] max-w-full">
                   <span>Learn More</span>
                   <div className="rounded-full">
-                    <Image
-                    src="/arrow.png"
-                    alt="Arrow icon"
-                    width={40}
-                    height={40}
-                />
+                    <Image src="/arrow.png" alt="Arrow icon" width={40} height={40} />
                   </div>
                 </button>
               </div>
