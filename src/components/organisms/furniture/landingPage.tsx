@@ -53,7 +53,7 @@ export default function landingPage() {
           style={{ fontFamily: "Montserrat" }}
         >
           Welcome to Tekla, where your dream furniture comes to life. We specialize in <br /> handcrafted, custom-designed
-          furniture tailored to your taste, space, and lifestyle.<br /> Whether it's a statement piece or a full room
+          furniture tailored to your taste, space, and lifestyle.<br /> Whether it is a statement piece or a full room
           makeover — we build it exactly how you<br /> want it.
         </p>
       </div>

@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Image from "next/image"
-import { ArrowRight } from "lucide-react"
+//import { ArrowRight } from "lucide-react"
 
 // Define project type
 interface Project {

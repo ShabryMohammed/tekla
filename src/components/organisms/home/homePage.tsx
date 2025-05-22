@@ -1,7 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
-import { div } from "framer-motion/client"
+//import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
+//import { div } from "framer-motion/client"
 
 export default function Home() {
   return (
@@ -39,7 +40,7 @@ export default function Home() {
       style={{ fontFamily: "Montserrat" }}
     >
       Where your space becomes a masterpiece. We specialize in custom interior design solutions that are
-      stylish, functional, and uniquely yours. Whether it's a home, office, or commercial space - we turn your
+      stylish, functional, and uniquely yours. Whether it is a home, office, or commercial space - we turn your
       vision into reality.
     </p>
 
