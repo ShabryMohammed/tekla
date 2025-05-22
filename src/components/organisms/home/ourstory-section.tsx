@@ -114,7 +114,7 @@ export default function OurStorySection() {
             </motion.div>
 
             {/* Pagination dots */}
-            <div className="md:col-span-2 flex justify-center gap-1 mt-2">
+            <div className="md:col-span-2 flex justify-center gap-1 md:-mt-10">
               <span className="h-2 w-2 bg-white rounded-full"></span>
               <span className="h-2 w-2 bg-gray-500 rounded-full"></span>
               <span className="h-2 w-2 bg-gray-500 rounded-full"></span>
