@@ -4,7 +4,7 @@ import { useState } from "react"
 import Image from "next/image"
 import { motion } from "framer-motion"
 
-export default function Home() {
+export default function Loader() {
   const [showText, setShowText] = useState(false)
 
   return (
