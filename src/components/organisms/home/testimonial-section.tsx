@@ -53,9 +53,11 @@ export default function TestimonialSection() {
   return (
     <div className="bg-black text-white py-16 px-4 md:py-24">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-light text-center mb-8">Our Customers</h1>
+        <h1 className="text-4xl md:text-5xl font-light text-center mb-8"
+        style={{ fontFamily: "Ysabeau" }}>Our Customers</h1>
 
-        <p className="text-center text-sm md:text-base max-w-2xl mx-auto mb-12 text-gray-300">
+        <p className="text-center text-sm md:text-base max-w-2xl mx-auto mb-12 text-gray-300"
+        style={{ fontFamily: "Ysabeau" }}>
           Our streamlined design process ensures your experience is smooth and stress-free. From initial consultation to
           the final touches, we collaborate closely with you to bring your vision to life — on time and within budget.
         </p>
@@ -69,14 +71,17 @@ export default function TestimonialSection() {
             </div>
           </div>
 
-          <blockquote className="text-center mb-14 text-sm md:text-base lg:text-lg px-40 md:h-24">
+          <blockquote className="text-center mb-14 text-sm md:text-base lg:text-xl px-40 md:h-24"
+          style={{ fontFamily: "Ysabeau" }}>
             <p className="italic">&quot;{currentTestimonial.quote}&quot;</p>
           </blockquote>
 
           <div className="flex flex-col items-center mb-10">
             <div className="w-12 h-12 md:w-16 md:h-16 bg-gray-300 rounded-full mb-3"></div>
-            <p className="font-medium">{currentTestimonial.name}</p>
-            <p className="text-sm text-gray-400">
+            <p className="font-medium"
+            style={{ fontFamily: "Ysabeau" }}>{currentTestimonial.name}</p>
+            <p className="text-sm text-gray-400"
+            style={{ fontFamily: "Ysabeau" }}>
               {currentTestimonial.position}, {currentTestimonial.company}
             </p>
           </div>
@@ -91,7 +96,7 @@ export default function TestimonialSection() {
           ? "text-black border-black"
           : "bg-transparent text-white hover:bg-black/30"
         }`}
-    >
+    style={{ fontFamily: "Ysabeau" }}>
       Client {index + 1}
     </button>
   ))}

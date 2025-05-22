@@ -68,7 +68,8 @@ export default function ProjectsSection() {
         {/* Header section with title and description */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-18 mb-36">
           <div>
-            <h2 className="text-4xl md:text-7xl font-medium mb-4 text-center border-b-2 border-white pb-20">Our Completed <br /> Projects</h2>
+            <h2 className="text-4xl md:text-7xl font-medium mb-4 text-center border-b-2 border-white pb-20"
+            style={{ fontFamily: "Ysabeau" }}>Our Completed <br /> Projects</h2>
           </div>
           <div>
             <p className="text-sm text-gray-300 w-lg py-10">
@@ -89,10 +90,13 @@ export default function ProjectsSection() {
                   <Image src={project.image || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
                 </div>
                 <div className="flex flex-col justify-center">
-                  <h3 className="text-2xl font-light mb-4">{project.title}</h3>
-                  <p className="text-sm text-gray-300 mb-6">{project.description}</p>
+                  <h3 className="text-2xl font-light mb-4"
+                  style={{ fontFamily: "Ysabeau" }}>{project.title}</h3>
+                  <p className="text-sm text-gray-300 mb-6"
+                  style={{ fontFamily: "Montserrat" }}>{project.description}</p>
                   <div>
-                    <button className="flex items-center justify-between gap-4 pl-4 pr-1 py-2 border-3 border-[#E5C767] text-white rounded-full w-[250px] h-[52px] hover:bg-yellow-500 hover:text-black transition-colors duration-300">
+                    <button className="flex items-center justify-between gap-4 pl-4 pr-1 py-2 border-3 border-[#E5C767] text-white rounded-full w-[250px] h-[52px] hover:bg-yellow-500 hover:text-black transition-colors duration-300"
+                    style={{ fontFamily: "Montserrat" }}>
                       <span>Explore our Project</span>
                       <Image src="/arrow.png" alt="Arrow Right" width={40} height={40} />
                     </button>
@@ -107,7 +111,8 @@ export default function ProjectsSection() {
         {/* Explore More button */}
         {!showMore && (
           <div className="flex justify-end mt-4">
-            <button onClick={() => setShowMore(true)} className="text-sm text-gray-300 hover:text-white">
+            <button onClick={() => setShowMore(true)} className="text-sm text-gray-300 hover:text-white"
+              style={{ fontFamily: "Montserrat" }}>
               Explore More Projects
             </button>
           </div>

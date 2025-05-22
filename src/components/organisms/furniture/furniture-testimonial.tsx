@@ -77,9 +77,11 @@ export default function TestimonialCarousel() {
   return (
     <div className="bg-black text-white min-h-screen flex flex-col items-center justify-center p-4 md:p-8">
       <div className="max-w-6xl w-full mx-auto mt-40">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-medium text-center mb-20">Furniture That Wins Hearts</h1>
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-medium text-center mb-20"
+        style={{ fontFamily: "Ysabeau" }}>Furniture That Wins Hearts</h1>
 
-        <p className="text-center text-sm md:text-base text-gray-300 max-w-2xl mx-auto mb-20 md:mb-36">
+        <p className="text-center text-sm md:text-base text-gray-300 max-w-2xl mx-auto mb-20 md:mb-36"
+        style={{ fontFamily: "Montserrat" }}>
           We&apos;re proud to be a part of your spaces. Read what our customers have to say about the experience — from first
           switch to final delivery.
         </p>
@@ -146,7 +148,8 @@ export default function TestimonialCarousel() {
                     ))}
                   </div>
 
-                  <blockquote className="text-lg md:text-xl mb-8 text-center justify-center">&quot;{testimonial.quote}&quot;</blockquote>
+                  <blockquote className="text-lg md:text-lg mb-8 text-center justify-center"
+                  style={{ fontFamily: "Montserrat" }}>&quot;{testimonial.quote}&quot;</blockquote>
 
                     <div className="flex flex-col items-center text-center">
                     <Image
@@ -156,8 +159,10 @@ export default function TestimonialCarousel() {
                         height={100}
                         className="h-12 w-12 rounded-full bg-gray-600 mb-2"
                     />
-                    <p className="font-medium">{testimonial.author}</p>
-                    <p className="text-sm text-gray-400">{testimonial.position}</p>
+                    <p className="font-medium"
+                    style={{ fontFamily: "Montserrat" }}>{testimonial.author}</p>
+                    <p className="text-sm text-gray-400"
+                    style={{ fontFamily: "Montserrat" }}>{testimonial.position}</p>
                     </div>
 
                 </div>

@@ -45,7 +45,7 @@ export default function Home() {
     </p>
 
     <h2
-      className="text-white text-2xl lg:text-[65px] xl:text-[80px] md:text-[46px] font-light tracking-wide lg:ml-[455px] xl:ml-[570px] md:ml-[325px] mt-[-80px]"
+      className="text-white text-2xl lg:text-[65px] xl:text-[80px] md:text-[46px] font-light tracking-wide lg:ml-[455px] xl:ml-[570px] md:ml-[325px] mt-[-50px]"
       style={{ fontFamily: "Ysabeau" }}
     >
       Timeless Design <br />

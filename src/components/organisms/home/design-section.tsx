@@ -50,8 +50,10 @@ export default function DesignProcess() {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-light mb-20">Design Process</h1>
-          <p className="max-w-2xl mx-auto text-sm md:text-base text-gray-400 mb-12">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-light mb-20"
+           style={{ fontFamily: "Ysabeau" }}>Design Process</h1>
+          <p className="max-w-2xl mx-auto text-sm md:text-base text-gray-400 mb-12"
+          style={{ fontFamily: "Montserrat" }}>
             Our streamlined design process ensures your experience is smooth and stress-free. From initial consultation
             to the final touches, we collaborate closely with you to bring your vision to life — on time and within
             budget.
@@ -100,10 +102,12 @@ export default function DesignProcess() {
                     step.position === "right" ? "md:pl-8 lg:pl-16 md:text-left" : "md:pr-8 lg:pr-16 md:text-right"
                   }`}
                 >
-                  <h3 className="text-xl md:text-2xl font-light mb-4">
+                  <h3 className="text-xl md:text-2xl font-light mb-4"
+                   style={{ fontFamily: "Ysabeau" }}>
                     Step {step.number}: {step.title}
                   </h3>
-                  <p className="text-sm md:text-base text-gray-400">{step.description}</p>
+                  <p className="text-sm md:text-base text-gray-400"
+                  style={{ fontFamily: "Montserrat" }}>{step.description}</p>
                 </div>
               </div>
             ))}

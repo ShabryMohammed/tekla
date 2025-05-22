@@ -15,7 +15,8 @@ export default function Footer() {
       <div className="container mx-auto py-8">
         {/* Social Media Section */}
         <div className="flex flex-col items-center justify-center mb-16">
-          <p className="text-center mb-4">Follow Us on</p>
+          <p className="text-center mb-4"
+          style={{ fontFamily: "Montserrat" }}>Follow Us on</p>
           <div className="flex space-x-4">
             {socialIcons.map((icon) => (
               <Link key={icon.name} href={icon.href} className="hover:opacity-80 transition-opacity">
@@ -41,15 +42,19 @@ export default function Footer() {
 
         {/* Copyright and Links Section */}
         <div className="flex flex-col md:flex-row justify-between items-center pt-4 mb-6">
-          <div className="mb-4 md:mb-0 text-sm">© {new Date().getFullYear()} Tekla. All rights reserved.</div>
+          <div className="mb-4 md:mb-0 text-sm"
+          style={{ fontFamily: "Roboto" }}>© {new Date().getFullYear()} Tekla. All rights reserved.</div>
           <div className="flex flex-wrap justify-center md:justify-end gap-4 md:gap-8 text-sm">
-            <Link href="/privacy-policy" className="hover:underline">
+            <Link href="/privacy-policy" className="hover:underline"
+            style={{ fontFamily: "Roboto" }}>
               Privacy Policy
             </Link>
-            <Link href="/terms-of-service" className="hover:underline">
+            <Link href="/terms-of-service" className="hover:underline"
+            style={{ fontFamily: "Roboto" }}>
               Terms of Service
             </Link>
-            <Link href="/cookies-settings" className="hover:underline">
+            <Link href="/cookies-settings" className="hover:underline"
+            style={{ fontFamily: "Roboto" }}>
               Cookies Settings
             </Link>
           </div>

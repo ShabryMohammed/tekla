@@ -9,7 +9,8 @@ export default function ContactForm() {
           <div className="p-8 md:p-12 lg:p-16 mt-12 mb-20">
             <form className="space-y-8 max-w-md">
               <div className="space-y-2">
-                <label htmlFor="name" className="text-white text-sm">
+                <label htmlFor="name" className="text-white text-sm"
+                style={{ fontFamily: "Montserrat" }}>
                   Name:
                 </label>
                 <input
@@ -20,7 +21,8 @@ export default function ContactForm() {
               </div>
 
               <div className="space-y-2">
-                <label htmlFor="email" className="text-white text-sm">
+                <label htmlFor="email" className="text-white text-sm"
+                style={{ fontFamily: "Montserrat" }}>
                   Email:
                 </label>
                 <input
@@ -31,7 +33,8 @@ export default function ContactForm() {
               </div>
 
               <div className="space-y-2">
-                <label htmlFor="phone" className="text-white text-sm">
+                <label htmlFor="phone" className="text-white text-sm"
+                style={{ fontFamily: "Montserrat" }}>
                   Mobile Phone:
                 </label>
                 <input
@@ -42,7 +45,8 @@ export default function ContactForm() {
               </div>
 
               <div className="space-y-2">
-                <label htmlFor="message" className="text-white text-sm">
+                <label htmlFor="message" className="text-white text-sm"
+                style={{ fontFamily: "Montserrat" }}>
                   Message:
                 </label>
                 <textarea
@@ -57,7 +61,7 @@ export default function ContactForm() {
             <button
                 type="submit"
                 className="flex items-center justify-between gap-4 pl-4 pr-1 -py-1 bg-[#e9c85d] text-black font-medium py-1 px-8 rounded-full hover:bg-[#d4b64a] transition-colors"
-              >
+              style={{ fontFamily: "Montserrat" }}>
                 SEND REQUEST
                 <Image src="/arrow.png" alt="Arrow Right" width={40} height={40} />
               </button>
@@ -67,12 +71,14 @@ export default function ContactForm() {
           {/* Right side - Text and Image */}
           <div className="relative">
             <div className="absolute inset-0 z-10 p-8 md:p-12 lg:p-16 flex flex-col justify-start">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-4 md:mb-8">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-4 md:mb-8"
+              style={{ fontFamily: "MontseYsabeaurrat" }}>
                 Let&apos;s Discuss
                 <br />
                 your project
               </h2>
-              <p className="text-white/80 text-sm md:text-base max-w-lg">
+              <p className="text-white/80 text-sm md:text-base max-w-lg"
+              style={{ fontFamily: "Montserrat" }}>
                 where your space becomes a masterpiece. We specialize in custom interior design solutions that are
                 stylish, functional, and uniquely yours. Whether it&apos;s a home, office, or commercial space - we turn
                 your vision into reality.

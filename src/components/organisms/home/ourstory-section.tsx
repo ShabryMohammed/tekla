@@ -7,16 +7,20 @@ export default function OurStorySection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
           {/* Left column with heading and text */}
           <div className="lg:col-span-3 flex flex-col text-center -mx-10">
-            <h2 className="text-4xl md:text-7xl font-medium mb-4">Our </h2>
-            <h2 className="text-4xl md:text-7xl font-medium mb-4">Story</h2>
+            <h2 className="text-4xl md:text-7xl font-medium mb-4"
+            style={{ fontFamily: "Ysabeau" }}>Our </h2>
+            <h2 className="text-4xl md:text-7xl font-medium mb-4"
+            style={{ fontFamily: "Ysabeau" }}>Story</h2>
             <div className="border-t-2 border-white w-full my-12"></div>
             <div className="space-y-6 mt-2">
-              <p className="text-sm text-left">
+              <p className="text-sm text-left"
+              style={{ fontFamily: "Montserrat" }}>
                 With over 10 years of experience, our team of passionate designers has transformed hundreds of spaces
                 with creativity and precision. We believe great design balances beauty with purpose, and every detail
                 matters.
               </p>
-              <p className="text-sm text-left">
+              <p className="text-sm text-left"
+              style={{ fontFamily: "Montserrat" }}>
                 With over 10 years of experience, our team of passionate designers has transformed hundreds of spaces
                 with creativity and precision. We believe great design balances beauty with purpose, and every detail
                 matters.
@@ -57,13 +61,16 @@ export default function OurStorySection() {
                     className="object-cover rounded-3xl"
                   />
                 </div>
-                <h3 className="font-medium text-lg">Serene Living</h3>
-                <p className="text-xs text-gray-300">The beauty in living <br /> the finer life.</p>
+                <h3 className="font-medium text-lg"
+                style={{ fontFamily: "Montserrat" }}>Serene Living</h3>
+                <p className="text-xs text-gray-300"
+                style={{ fontFamily: "Montserrat" }}>The beauty in living <br /> the finer life.</p>
               </div>
 
               {/* Learn More button */}
               <div className="flex justify-start items-center gap-4">
-                <button className="flex items-center justify-between gap-4 pl-4 pr-1 py-2 border-3 border-[#E5C767] text-white rounded-full transition-colors w-[280px] h-[52px]">
+                <button className="flex items-center justify-between gap-4 pl-4 pr-1 py-2 border-3 border-[#E5C767] text-white rounded-full transition-colors w-[280px] h-[52px]"
+                style={{ fontFamily: "Montserrat" }}>
                   <span>Learn More</span>
                   <div className="rounded-full">
                     <Image
