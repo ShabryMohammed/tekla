@@ -71,8 +71,12 @@ export default function TestimonialSection() {
             </div>
           </div>
 
+<<<<<<< HEAD
           <blockquote className="text-center mb-14 text-sm md:text-base lg:text-xl px-40 md:h-24"
           style={{ fontFamily: "Ysabeau" }}>
+=======
+          <blockquote className="text-center mb-14 text-sm md:text-base lg:text-lg px-10 md:px-40 lg:px-40 md:h-24">
+>>>>>>> 3a8c6152e332a8a08eaa1d8f51de12e57afcb52f
             <p className="italic">&quot;{currentTestimonial.quote}&quot;</p>
           </blockquote>
 
@@ -86,6 +90,7 @@ export default function TestimonialSection() {
             </p>
           </div>
 
+<<<<<<< HEAD
 <div className="grid grid-cols-4 text-white border-t-2 border-[#E5C767] [&>*:not(:last-child)]:border-r-2 [&>*]:border-[#E5C767]">
   {testimonials.map((testimonial, index) => (
     <button
@@ -101,6 +106,23 @@ export default function TestimonialSection() {
     </button>
   ))}
 </div>
+=======
+          <div className="grid grid-cols-4 text-white border-t-2 border-[#E5C767] [&>*:not(:last-child)]:border-r-2 [&>*]:border-[#E5C767]">
+            {testimonials.map((testimonial, index) => (
+              <button
+                key={index}
+                onClick={() => setSelectedIndex(index)}
+                className={`py-4 text-center text-xs md:text-sm
+                  ${selectedIndex === index
+                    ? "text-black border-black"
+                    : "bg-transparent text-white hover:bg-black/30"
+                  }`}
+              >
+                Client {index + 1}
+              </button>
+            ))}
+          </div>
+>>>>>>> 3a8c6152e332a8a08eaa1d8f51de12e57afcb52f
 
         </div>
       </div>

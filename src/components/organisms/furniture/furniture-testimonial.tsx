@@ -13,7 +13,7 @@ const testimonials = [
       "Our streamlined design process ensures your experience is smooth and stress-free. From initial consultation to the final touches, we collaborate closely with you to bring your vision to life — on time and within budget.",
     author: "Name Surname",
     position: "Position, Company name",
-    image: "/carousel.png",
+    image: "/carousel/carousel1.png",
     rating: 5,
   },
   {
@@ -22,7 +22,7 @@ const testimonials = [
       "The attention to detail and quality of craftsmanship exceeded our expectations. Every piece feels like it was made specifically for our space, and the customer service was exceptional throughout.",
     author: "Jane Smith",
     position: "Interior Designer, Design Studio",
-    image: "/carousel.png",
+    image: "/carousel/carousel2.png",
     rating: 5,
   },
   {
@@ -31,7 +31,7 @@ const testimonials = [
       "We've furnished three rooms with their pieces and couldn't be happier. The durability is impressive, and the designs are timeless. Worth every penny for furniture that truly makes a house feel like home.",
     author: "Robert Johnson",
     position: "Homeowner, Client",
-    image: "/carousel.png",
+    image: "/carousel/carousel3.png",
     rating: 5,
   },
 ]
@@ -86,10 +86,11 @@ export default function TestimonialCarousel() {
           switch to final delivery.
         </p>
 
-        <div className="grid md:grid-cols-2 gap-18 relative">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-18 lg:gap-18 relative">
           {/* Image Section */}
           <div className="relative overflow-hidden rounded-lg h-[300px] md:h-[400px] lg:h-[450px]">
             <div className="carousel-container absolute w-full h-full ">
+              
               {testimonials.map((testimonial, index) => (
                 <div
                   key={testimonial.id}
@@ -106,6 +107,7 @@ export default function TestimonialCarousel() {
                   />
                 </div>
               ))}
+              
             </div>
           </div>
 
@@ -134,7 +136,7 @@ export default function TestimonialCarousel() {
               </Button>
             </div>
 
-            <div className="relative h-[250px] md:h-[300px] overflow-hidden mb-[300px]">
+            <div className="relative h-[350px] md:h-[350px] overflow-hidden mb-[150px] md:mb-[300px]">
               {testimonials.map((testimonial, index) => (
                 <div
                   key={testimonial.id}
@@ -151,7 +153,7 @@ export default function TestimonialCarousel() {
                   <blockquote className="text-lg md:text-lg mb-8 text-center justify-center"
                   style={{ fontFamily: "Montserrat" }}>&quot;{testimonial.quote}&quot;</blockquote>
 
-                    <div className="flex flex-col items-center text-center">
+                    <div className="flex flex-col items-center text-center mt-16">
                     <Image
                       src={testimonial.image || "/placeholder.svg"}
                         alt="Testimonial Author"

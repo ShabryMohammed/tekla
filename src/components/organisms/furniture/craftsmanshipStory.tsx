@@ -1,3 +1,4 @@
+import ParallaxSection from "@/components/parallax/parallax-section"
 import Image from "next/image"
 
 export default function CraftsmanshipSection() {
@@ -20,6 +21,7 @@ export default function CraftsmanshipSection() {
         {/* Content Section */}
 <div className="bg-[#0D2821] text-white p-8  flex items-center">
   <div className="max-w-lg text-start ">
+    <ParallaxSection type="slide-from-right" speed={1.2}>
     <h2
       className="text-3xl md:text-2xl lg:text-3xl  xl:text-4xl font-light mb-6"
       style={{ fontFamily: "Ysabeau" }}
@@ -34,6 +36,7 @@ export default function CraftsmanshipSection() {
       aesthetics. Every piece we create is made with premium materials, skilled hands, and a deep respect for
       your vision. Our goal? To build furniture that lasts generations.
     </p>
+    </ParallaxSection>
   </div>
 </div>
 

@@ -2,7 +2,11 @@
 
 import { useState } from "react"
 import Image from "next/image"
+<<<<<<< HEAD
 //import { ArrowRight } from "lucide-react"
+=======
+import ParallaxSection from "@/components/parallax/parallax-section"
+>>>>>>> 3a8c6152e332a8a08eaa1d8f51de12e57afcb52f
 
 // Define project type
 interface Project {
@@ -72,16 +76,19 @@ export default function ProjectsSection() {
             style={{ fontFamily: "Ysabeau" }}>Our Completed <br /> Projects</h2>
           </div>
           <div>
-            <p className="text-sm text-gray-300 w-lg py-10">
+            <ParallaxSection type="slide-from-right" speed={1.2}>
+            <p className="text-sm text-gray-300 md:w-lg py-10">
               Where your space becomes a masterpiece. We specialize in elegant interior design solutions that are
               stylish, functional, and uniquely yours. Whether it&apos;s a home, office, or commercial space—we turn your
               vision into reality. Our experienced team is dedicated to transforming ordinary spaces into extraordinary
               experiences, ensuring every project is functional and fabulous.
             </p>
+            </ParallaxSection>
           </div>
         </div>
 
         {/* Projects list */}
+        <ParallaxSection type="slide-from-right" speed={1.2}>
         <div className="space-y-12">
           {displayedProjects.map((project) => (
             <div key={project.id}>
@@ -107,6 +114,7 @@ export default function ProjectsSection() {
             </div>
           ))}
         </div>
+        </ParallaxSection>
 
         {/* Explore More button */}
         {!showMore && (
