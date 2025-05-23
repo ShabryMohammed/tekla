@@ -1,6 +1,6 @@
 "use client"
 import { useState, useEffect } from "react"
-import HomePage from "../components/organisms/home/homepage/homePage"
+import HomePage from "../components/organisms/home/homePage"
 import OurStorySection from "@/components/organisms/home/ourstory-section"
 import ServicesSection from "@/components/organisms/home/services-section"
 import ProjectsSection from "@/components/organisms/home/projects-section"

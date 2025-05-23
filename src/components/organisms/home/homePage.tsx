@@ -4,7 +4,7 @@ import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
 import ParallaxSection from "@/components/parallax/parallax-section"
 import { motion, AnimatePresence } from "framer-motion"
-import Navbar from "@/components/organisms/home/homepage/navbar"
+import Navbar from "@/components/molecules/navbar"
 
 export default function Home() {
   return (
