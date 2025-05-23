@@ -246,7 +246,7 @@ case "rotate-in":
 
       case "parallax-horizontal":
         // Horizontal parallax effect
-        animation = gsap.timeline({
+       let animation1 = gsap.timeline({
           scrollTrigger: {
             trigger: section,
             start: "top bottom",
@@ -260,7 +260,7 @@ case "rotate-in":
           layers.forEach((layer, index) => {
             const direction = index % 2 === 0 ? -1 : 1
             const depth = (layers.length - index) / layers.length
-            animation.fromTo(
+            animation1.fromTo(
               layer,
               { x: 0 },
               {
