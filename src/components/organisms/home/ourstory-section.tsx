@@ -9,12 +9,23 @@ export default function OurStorySection() {
   const [hasAnimated, setHasAnimated] = useState(false)
   const { ref, inView } = useInView({ threshold: 0.2 })
 
+  // State for cycling images
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+  const images = ["/ourstory/s2_1.png", "/ourstory/s2_2.png", "/ourstory/s2_3.png", "/ourstory/s2_4.png"]
+
   useEffect(() => {
     if (inView && !hasAnimated) {
       controls.start("visible")
       setHasAnimated(true)
     }
   }, [controls, inView, hasAnimated])
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length)
+    }, 4000) // Change image every 4 seconds
+    return () => clearInterval(interval)
+  }, [])
 
   const imageVariants = {
     hidden: { opacity: 0, y: 30 },
@@ -110,7 +121,7 @@ export default function OurStorySection() {
               animate={controls}
               variants={imageVariants}
             >
-              <Image src="/ourstory/s2.png" alt="Image" fill className="object-cover rounded-3xl" />
+              <Image src={images[currentImageIndex]} alt="Image" fill className="object-cover rounded-3xl" />
             </motion.div>
 
             {/* Pagination dots */}

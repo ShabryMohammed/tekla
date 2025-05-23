@@ -67,7 +67,7 @@ export default function Loader() {
               duration: 1.2,
               ease: "easeInOut",
             }}
-            onAnimationComplete={() => setShowText(true)}
+            onUpdate={() => setShowText(true)} // Trigger text display during movement
           />
 
           {/* Explore Text */}
@@ -77,7 +77,7 @@ export default function Loader() {
               style={{ fontFamily: "Montserrat" }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 0.4, delay: 0.1 }}
+              transition={{ duration: 0.4 }}
             >
               explore
             </motion.span>
