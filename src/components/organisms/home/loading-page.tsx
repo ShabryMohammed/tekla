@@ -3,12 +3,19 @@
 import { useState } from "react"
 import Image from "next/image"
 import { motion } from "framer-motion"
+import { useRouter } from "next/navigation"
 
 export default function Loader() {
   const [showText, setShowText] = useState(false)
+  const router = useRouter()
 
   return (
-    <main className="relative h-screen w-full overflow-hidden">
+    <motion.main
+      className="relative h-screen w-full overflow-hidden"
+      initial={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -31,7 +38,8 @@ export default function Loader() {
 
         {/* TEKLA Heading */}
         <motion.h1
-          className="mt-30 text-center text-8xl font-[400] tracking-[0.3em] text-white md:text-[8rem]  lg:text-[10rem]"
+          layoutId="tekla-logo"
+          className="mt-30 text-center text-8xl font-[400] tracking-[0.3em] text-white md:text-[8rem] lg:text-[10rem]"
           style={{ fontFamily: "Ysabeau" }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -61,13 +69,19 @@ export default function Loader() {
           <motion.div
             className="absolute top-1/2 left-1 h-[31px] w-[31px] -translate-y-1/2 rounded-full bg-white"
             initial={{ x: 0 }}
-            animate={{ x: 135 }} // Adjusted for new width
+            animate={{ x: 135 }}
             transition={{
               delay: 2, // <-- wait 2 seconds before moving
               duration: 1.2,
               ease: "easeInOut",
             }}
             onUpdate={() => setShowText(true)} // Trigger text display during movement
+            onAnimationComplete={() => {
+              // Navigate to home page when animation completes
+              setTimeout(() => {
+                router.push("/")
+              }, 300)
+            }}
           />
 
           {/* Explore Text */}
@@ -84,6 +98,6 @@ export default function Loader() {
           )}
         </motion.div>
       </div>
-    </main>
+    </motion.main>
   )
 }
