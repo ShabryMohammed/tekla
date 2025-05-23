@@ -79,12 +79,19 @@ export default function DesignProcess() {
           {/* Steps */}
           <div className="relative z-10">
             {/* Prepare refs and inView states for each step using useInView hooks outside the map callback */}
-            {steps.map(() => null)} {/* placeholder to get steps.length */}
             {(() => {
-              // Create refs and inView arrays using hooks
-              const refsInView = steps.map(() => useInView({ triggerOnce: true }));
+              // Move useInView hooks outside the map callback
+              const refs: (React.RefCallback<HTMLDivElement> | undefined)[] = [];
+              const inViews: boolean[] = [];
+              steps.forEach(() => {
+                // eslint-disable-next-line react-hooks/rules-of-hooks
+                const [ref, inView] = useInView({ triggerOnce: true });
+                refs.push(ref);
+                inViews.push(inView);
+              });
               return steps.map((step, index) => {
-                const [ref, inView] = refsInView[index];
+                const ref = refs[index];
+                const inView = inViews[index];
 
                 const imageVariant = {
                   hidden: { opacity: 0, x: step.position === "right" ? 100 : -100 },

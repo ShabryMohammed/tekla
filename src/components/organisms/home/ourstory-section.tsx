@@ -25,7 +25,7 @@ export default function OurStorySection() {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length)
     }, 4000) // Change image every 4 seconds
     return () => clearInterval(interval)
-  }, [])
+  }, [images.length])
 
   const imageVariants = {
     hidden: { opacity: 0, y: 30 },
