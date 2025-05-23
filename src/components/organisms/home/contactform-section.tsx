@@ -94,8 +94,8 @@ export default function ContactForm() {
 
   return (
     <main className="min-h-screen">
-      <section ref={sectionRef} className="relative w-full">
-        <div className="grid grid-cols-1 md:grid-cols-2 bg-[#0a2920]">
+      <section ref={sectionRef} className="relative w-full ">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-x-8 px-4 sm:px-6 md:px-8 lg:px-12 bg-[#0a2920]">
           {/* Left side - Form */}
           <ParallaxSection type="reveal-mask" speed={1.5}>
             <div className="p-8 md:p-12 lg:p-16 mt-12 mb-20">
@@ -176,7 +176,7 @@ export default function ContactForm() {
             </div>
 
             {/* Sofa Image */}
-            <div className="absolute z-20 top-[40%] md:top-[50%] w-[80%] md:w-[700px] left-[60%] md:left-1/2 -translate-x-1/2 overflow-visible">
+            <div className="absolute z-20 top-[40%] md:top-[50%] w-[80%] md:w-[700px] left-[60%] md:left-1/2 lg:left-[55%] -translate-x-1/2 overflow-visible">
               <Image
                 ref={sofaRef}
                 src="/sofa.png"
@@ -190,7 +190,7 @@ export default function ContactForm() {
             </div>
 
             {/* Stool Image */}
-            <div className="absolute z-20 top-[30%] md:top-[33%] sm:left-auto sm:right-[80%] w-[200px] md:w-[400px] overflow-visible">
+            <div className="absolute z-20 top-[30%] md:top-[33%] sm:left-auto sm:right-[80%] lg:right-[65%] w-[200px] md:w-[400px] overflow-visible">
               <Image
                 ref={stoolRef}
                 src="/stool.png"
