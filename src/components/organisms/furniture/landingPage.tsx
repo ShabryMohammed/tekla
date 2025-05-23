@@ -4,14 +4,14 @@ import Navbar from "@/components/molecules/navbar"
 import Image from "next/image"
 import { useState, useEffect } from "react"
 
-export default function landingPage() {
-  const images = [
+export default function LandingPage() {
+  const images: string[] = [
     "/furnitureWebsite/landingpagebg1.png",
     "/furnitureWebsite/landingpagebg2.png",
     "/furnitureWebsite/landingpagebg3.png",
     "/furnitureWebsite/landingpagebg4.png",
   ]
-  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+  const [currentImageIndex, setCurrentImageIndex] = useState<number>(0)
 
   useEffect(() => {
     const interval = setInterval(() => {
