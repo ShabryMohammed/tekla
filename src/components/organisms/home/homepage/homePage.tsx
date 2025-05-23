@@ -4,6 +4,7 @@ import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
 import ParallaxSection from "@/components/parallax/parallax-section"
 import { motion, AnimatePresence } from "framer-motion"
+import Navbar from "@/components/organisms/home/homepage/navbar"
 
 export default function Home() {
   return (
@@ -17,7 +18,18 @@ export default function Home() {
         {/* Content Overlay */}
         <div className="relative z-10 flex flex-col min-h-screen">
           {/* Logo */}
-          <header className="pt-8 px-6 lg:px-12 md:px-8 text-center">
+          <header className="pt-8 px-6 lg:px-12 md:px-8 text-center relative">
+            {/* Logo in top left corner */}
+            <div className="absolute left-6 lg:left-15 md:left-8 top-8">
+              <Image 
+                src="/Homepage_logo.png" 
+                alt="Tekla Logo" 
+                width={97} 
+                height={79} 
+                className="object-contain"
+              />
+            </div>
+            
             <div className="inline-block">
               <motion.h1 
                 layoutId="tekla-logo" 
@@ -31,12 +43,17 @@ export default function Home() {
             </div>
           </header>
 
+          {/* Navbar */}
+          <div className="mt-4">
+            <Navbar />
+          </div>
+
           {/* Main Content */}
-          <div className="flex flex-col items-start justify-start flex-grow px-6 lg:px-12 md:px-8 mt-[100px]">
+          <div className="flex flex-col items-start justify-start flex-grow px-6 lg:px-12 md:px-8 mt-[60px]">
             <div className="w-full">
               <div className="mx-auto w-fit">
                 <motion.h2
-                  className="text-white text-2xl lg:text-[65px] xl:text-[80px] md:text-[46px] font-light tracking-wide"
+                  className="text-white text-2xl lg:text-[65px] xl:text-[80px] md:text-[36px] font-light tracking-wide"
                   style={{ fontFamily: "Ysabeau" }}
                   initial={{ opacity: 0, x: -100 }}
                   animate={{ opacity: 1, x: 0 }}
@@ -46,19 +63,19 @@ export default function Home() {
                 </motion.h2>
 
                 <motion.p
-                  className="text-white text-[10px] mt-4 lg:max-w-sm xl:max-w-lg md:max-w-[310px]"
+                  className="text-white text-[10px] mt-4 lg:max-w-sm xl:max-w-lg md:max-w-[250px]"
                   style={{ fontFamily: "Montserrat" }}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.8, delay: 0.6 }}
                 >
-                  Where your space becomes a masterpiece. We specialize in custom interior design solutions that are
-                  stylish, functional, and uniquely yours. Whether it&apos;s a home, office, or commercial space - we turn your
-                  vision into reality.
+                  Where your space becomes a masterpiece. We specialize in custom interior design solutions that are stylish,
+                  functional, and uniquely yours. Whether it&apos;s a home, office, or commercial space - we turn your vision into
+                  reality.
                 </motion.p>
 
                 <motion.h2
-                  className="text-white text-2xl lg:text-[65px] xl:text-[80px] md:text-[46px] font-light tracking-wide lg:ml-[455px] xl:ml-[570px] md:ml-[325px] mt-[-80px]"
+                  className="text-white text-2xl lg:text-[65px] xl:text-[80px] md:text-[36px] font-light tracking-wide lg:ml-[455px] xl:ml-[570px] md:ml-[250px] mt-[-60px]"
                   style={{ fontFamily: "Ysabeau" }}
                   initial={{ opacity: 0, x: 100 }}
                   animate={{ opacity: 1, x: 0 }}
