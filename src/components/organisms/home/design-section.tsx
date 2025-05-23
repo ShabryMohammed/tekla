@@ -79,7 +79,7 @@ export default function DesignProcess() {
           {/* Steps */}
           <div className="relative z-10">
             {/* Prepare refs and inView states for each step using useInView hooks outside the map callback */}
-            {steps.map((_, i) => null)} {/* placeholder to get steps.length */}
+            {steps.map(() => null)} {/* placeholder to get steps.length */}
             {(() => {
               // Create refs and inView arrays using hooks
               const refsInView = steps.map(() => useInView({ triggerOnce: true }));
