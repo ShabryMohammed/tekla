@@ -1,13 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
-<<<<<<< HEAD
-//import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
-//import { div } from "framer-motion/client"
-
-=======
 import ParallaxSection from "@/components/parallax/parallax-section"
->>>>>>> 3a8c6152e332a8a08eaa1d8f51de12e57afcb52f
 export default function Home() {
   return (
     <main className="relative min-h-screen w-full">
@@ -39,22 +33,6 @@ export default function Home() {
                 Transform Your Space with <br />
               </h2>
 
-<<<<<<< HEAD
-    <p
-      className="text-white text-[10px] mt-4 lg:max-w-sm  xl:max-w-lg md:max-w-[310px]"
-      style={{ fontFamily: "Montserrat" }}
-    >
-      Where your space becomes a masterpiece. We specialize in custom interior design solutions that are
-      stylish, functional, and uniquely yours. Whether it is a home, office, or commercial space - we turn your
-      vision into reality.
-    </p>
-
-    <h2
-      className="text-white text-2xl lg:text-[65px] xl:text-[80px] md:text-[46px] font-light tracking-wide lg:ml-[455px] xl:ml-[570px] md:ml-[325px] mt-[-50px]"
-      style={{ fontFamily: "Ysabeau" }}
-    >
-      Timeless Design <br />
-=======
               <p
                 className="text-white text-[10px] mt-4 lg:max-w-sm  xl:max-w-lg md:max-w-[310px]"
                 style={{ fontFamily: "Montserrat" }}
@@ -69,7 +47,6 @@ export default function Home() {
                 style={{ fontFamily: "Ysabeau" }}
               >
                 Timeless Design <br />
->>>>>>> 3a8c6152e332a8a08eaa1d8f51de12e57afcb52f
 
                 {/* Action Buttons */}
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-4 mt-8 ml-4 lg:ml-0 md:ml-2 md:justify-center lg:gap-8">

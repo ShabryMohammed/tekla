@@ -69,23 +69,6 @@ export default function ContactForm() {
               </div>
           </div>
 
-<<<<<<< HEAD
-          {/* Right side - Text and Image */}
-          <div className="relative">
-            <div className="absolute inset-0 z-10 p-8 md:p-12 lg:p-16 flex flex-col justify-start">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-4 md:mb-8"
-              style={{ fontFamily: "MontseYsabeaurrat" }}>
-                Let&apos;s Discuss
-                <br />
-                your project
-              </h2>
-              <p className="text-white/80 text-sm md:text-base max-w-lg"
-              style={{ fontFamily: "Montserrat" }}>
-                where your space becomes a masterpiece. We specialize in custom interior design solutions that are
-                stylish, functional, and uniquely yours. Whether it&apos;s a home, office, or commercial space - we turn
-                your vision into reality.
-              </p>
-=======
             <div className="relative w-full min-h-[600px]">
               {/* Text Content */}
               <div className="absolute inset-0 z-10 p-6 md:p-12 lg:p-16 flex flex-col justify-start">
@@ -122,7 +105,6 @@ export default function ContactForm() {
                 priority
               />
               </ParallaxSection>
->>>>>>> 3a8c6152e332a8a08eaa1d8f51de12e57afcb52f
             </div>
 
         </div>

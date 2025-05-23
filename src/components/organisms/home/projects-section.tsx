@@ -2,11 +2,7 @@
 
 import { useState } from "react"
 import Image from "next/image"
-<<<<<<< HEAD
-//import { ArrowRight } from "lucide-react"
-=======
 import ParallaxSection from "@/components/parallax/parallax-section"
->>>>>>> 3a8c6152e332a8a08eaa1d8f51de12e57afcb52f
 
 // Define project type
 interface Project {

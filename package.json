@@ -22,13 +22,8 @@
     "next": "15.3.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-<<<<<<< HEAD
-    "tailwind-merge": "^3.3.0",
-    "typeface-roboto": "^1.1.13"
-=======
     "react-intersection-observer": "^9.16.0",
     "tailwind-merge": "^3.3.0"
->>>>>>> 3a8c6152e332a8a08eaa1d8f51de12e57afcb52f
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
