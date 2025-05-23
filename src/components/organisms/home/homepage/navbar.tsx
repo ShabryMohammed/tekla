@@ -29,7 +29,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="bg-black border border-white border-[0.1px] rounded-[40px] relative mx-auto max-w-[95%] lg:max-w-[90%] xl:max-w-[85%] mt-10">
+    <nav className="bg-black border border-white border-[0.1px] rounded-[40px] relative mx-auto max-w-[95%] lg:max-w-[90%] xl:max-w-[80%] mt-10">
       <div className="w-full mx-auto px-2 sm:px-4 md:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
