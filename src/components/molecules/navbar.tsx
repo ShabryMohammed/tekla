@@ -2,14 +2,15 @@
 
 import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [, setActiveDropdown] = useState<string | null>(null)
   const dropdownRef = useRef<HTMLDivElement>(null)
+  const pathname = usePathname()
 
-  // Close dropdown when clicking outside
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
@@ -22,6 +23,15 @@ export default function Navbar() {
     }
   }, [])
 
+  const navLinks = [
+    { href: "/", label: "Home" },
+    { href: "/real-estate", label: "Real Estate" },
+    { href: "/interior-design", label: "Interior Design" },
+    { href: "/furniture", label: "Furniture" },
+    { href: "/packages", label: "Packages" },
+    { href: "/blog", label: "Blog" },
+    { href: "/our-team", label: "Our Team" },
+  ]
 
   return (
     <nav className="bg-black border-white border-[0.1px] rounded-[40px] relative mx-auto max-w-[95%] lg:max-w-[90%] xl:max-w-[80%] mt-10">
@@ -49,57 +59,21 @@ export default function Navbar() {
 
             {/* Desktop navigation */}
             <div className="hidden md:flex md:items-center md:space-x-2 lg:space-x-4 xl:space-x-8">
-              <Link
-                href="/"
-                className=" hover:text-yellow-400 px-2 lg:px-3 py-2 text-xs lg:text-sm font-medium whitespace-nowrap text-white"
-                style={{ fontFamily: "Montserrat" }}
-              >
-                Home
-              </Link>
-              <Link
-                href="/real-estate"
-                className="hover:text-yellow-400 px-2 lg:px-3 py-2 text-xs lg:text-sm font-medium whitespace-nowrap"
-                style={{ fontFamily: "Montserrat" }}
-              >
-                Real Estate
-              </Link>
-              <Link
-                href="/interior-design"
-                className="hover:text-yellow-400 px-2 lg:px-3 py-2 text-xs lg:text-sm font-medium whitespace-nowrap"
-                style={{ fontFamily: "Montserrat" }}
-              >
-                Interior Design
-              </Link>
-
-              <Link
-                href="/furniture"
-                className="hover:text-yellow-400 px-2 lg:px-3 py-2 text-xs lg:text-sm font-medium"
-                style={{ fontFamily: "Montserrat" }}
-              >
-                Furniture
-              </Link>
-
-              <Link
-                href="/packages"
-                className="hover:text-yellow-400 px-2 lg:px-3 py-2 text-xs lg:text-sm font-medium"
-                style={{ fontFamily: "Montserrat" }}
-              >
-                Packages
-              </Link>
-              <Link
-                href="/blog"
-                className="hover:text-yellow-400 px-2 lg:px-3 py-2 text-xs lg:text-sm font-medium"
-                style={{ fontFamily: "Montserrat" }}
-              >
-                Blog
-              </Link>
-              <Link
-                href="/our-team"
-                className="hover:text-yellow-400 px-2 lg:px-3 py-2 text-xs lg:text-sm font-medium"
-                style={{ fontFamily: "Montserrat" }}
-              >
-                Our Team
-              </Link>
+              {navLinks.map((link) => {
+                const isActive = pathname === link.href
+                return (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className={`px-2 lg:px-3 py-2 text-xs lg:text-sm font-medium whitespace-nowrap transition-colors ${
+                      isActive ? "text-yellow-400" : "text-white hover:text-yellow-400"
+                    }`}
+                    style={{ fontFamily: "Montserrat" }}
+                  >
+                    {link.label}
+                  </Link>
+                )
+              })}
             </div>
           </div>
 
