@@ -56,7 +56,7 @@ export default function Navbar() {
             <div className="hidden md:flex md:items-center md:space-x-2 lg:space-x-4 xl:space-x-8">
               <Link
                 href="/"
-                className="text-gray-300 hover:text-white px-2 lg:px-3 py-2 text-xs lg:text-sm font-medium whitespace-nowrap"
+                className="text-gray-300 hover:text-white px-2 lg:px-3 py-2 text-xs lg:text-sm font-medium whitespace-nowrap bg-[#E5C767] rounded-[40px] text-white"
                 style={{ fontFamily: "Montserrat" }}
               >
                 Home
