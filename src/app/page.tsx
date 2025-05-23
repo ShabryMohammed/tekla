@@ -47,7 +47,7 @@ export default function Home() {
         <ProjectsSection />
       </ParallaxSection>
 
-      <ParallaxSection type="3d-tilt" speed={1}>
+      <ParallaxSection type="fade-in-up" speed={1}>
         <DesignProcess />
       </ParallaxSection>
 
@@ -55,7 +55,7 @@ export default function Home() {
         <FurnitureSection />
       </ParallaxSection>
 
-      <ParallaxSection type="rotate-in" speed={0.7}>
+      <ParallaxSection type="fade-in" speed={1}>
         <TestimonialSection />
       </ParallaxSection>
 

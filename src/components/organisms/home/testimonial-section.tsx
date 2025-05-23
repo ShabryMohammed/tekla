@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { Star } from "lucide-react"
+import ParallaxSection from "@/components/parallax/parallax-section"
 
 // Define testimonial data structure
 type Testimonial = {
@@ -53,14 +54,18 @@ export default function TestimonialSection() {
   return (
     <div className="bg-black text-white py-16 px-4 md:py-24">
       <div className="max-w-6xl mx-auto">
+        <ParallaxSection type="slide-from-left" speed={1.2}>
         <h1 className="text-4xl md:text-5xl font-light text-center mb-8"
         style={{ fontFamily: "Ysabeau" }}>Our Customers</h1>
+        </ParallaxSection>
 
+          <ParallaxSection type="slide-from-right" speed={1.2}>
         <p className="text-center text-sm md:text-base max-w-2xl mx-auto mb-12 text-gray-300"
         style={{ fontFamily: "Ysabeau" }}>
           Our streamlined design process ensures your experience is smooth and stress-free. From initial consultation to
           the final touches, we collaborate closely with you to bring your vision to life — on time and within budget.
         </p>
+        </ParallaxSection>
 
         <div className="border-2 border-[#E5C767] pt-6 md:pt-10 relative w-full max-w-6xl">
           <div className="flex justify-center mb-24">
