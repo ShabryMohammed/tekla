@@ -51,7 +51,7 @@ export default function Home() {
         <DesignProcess />
       </ParallaxSection>
 
-      <ParallaxSection type="parallax-horizontal" speed={1.2}>
+      <ParallaxSection type="scale-in" speed={1.2}>
         <FurnitureSection />
       </ParallaxSection>
 
@@ -67,7 +67,7 @@ export default function Home() {
         <ContactUs />
       </ParallaxSection>
 
-      <ParallaxSection type="scale-in" speed={0.8}>
+      <ParallaxSection type="scale-in" speed={1.2}>
         <LocationSection />
       </ParallaxSection>
 
