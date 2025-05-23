@@ -59,13 +59,9 @@ export default function Home() {
         <TestimonialSection />
       </ParallaxSection>
 
-      <ParallaxSection type="reveal-mask" speed={1.5}>
         <ContactForm />
-      </ParallaxSection>
 
-      <ParallaxSection type="zoom-out" speed={1.3}>
         <ContactUs />
-      </ParallaxSection>
 
       <ParallaxSection type="scale-in" speed={1.2}>
         <LocationSection />

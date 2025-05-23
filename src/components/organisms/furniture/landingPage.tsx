@@ -1,5 +1,6 @@
 "use client"
 
+import Navbar from "@/components/molecules/navbar"
 import Image from "next/image"
 import { useState, useEffect } from "react"
 
@@ -38,7 +39,7 @@ export default function landingPage() {
           </p>
         </div>
       </header>
-
+<Navbar />
       <div className="relative" style={{ padding: "0 25px" }}>
         {/* Hero Image */}
         <div className="relative h-[619px] z-0">

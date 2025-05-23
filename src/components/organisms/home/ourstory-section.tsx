@@ -79,7 +79,7 @@ export default function OurStorySection() {
             {/* Top image */}
             <motion.div
               className="relative rounded-lg overflow-hidden aspect-[3/3] w-[95%]"
-              custom={delays[1]}
+              custom={delays[0.25]}
               initial="hidden"
               animate={controls}
               variants={imageVariants}
@@ -91,7 +91,7 @@ export default function OurStorySection() {
               {/* Right small card */}
               <motion.div
                 className="bg-black border-2 border-[#E5C767] rounded-4xl p-4 relative w-[85%]"
-                custom={delays[2]}
+                custom={delays[0.5]}
                 initial="hidden"
                 animate={controls}
                 variants={imageVariants}
@@ -116,7 +116,7 @@ export default function OurStorySection() {
             {/* Bottom large image */}
             <motion.div
               className="md:col-span-2 relative rounded-lg overflow-hidden aspect-[5/3] w-[95%]"
-              custom={delays[3]}
+              custom={delays[0.75]}
               initial="hidden"
               animate={controls}
               variants={imageVariants}
@@ -136,7 +136,7 @@ export default function OurStorySection() {
           {/* Mobile only bottom image */}
           <motion.div
             className="md:hidden relative rounded-lg overflow-hidden aspect-[4/3]"
-            custom={delays[4]}
+            custom={delays[0.9]}
             initial="hidden"
             animate={controls}
             variants={imageVariants}

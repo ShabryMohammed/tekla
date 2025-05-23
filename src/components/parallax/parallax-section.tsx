@@ -227,7 +227,7 @@ export default function ParallaxSection({ children, type, speed = 1, delay = 0 }
 case "rotate-in":
   animation = gsap.fromTo(
     section,
-    { opacity: 0, rotation: -25 }, // Increased from -5 to -25
+    { opacity: 0, rotation: -15 }, // Increased from -5 to -25
     {
       opacity: 1,
       rotation: 0,

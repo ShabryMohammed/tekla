@@ -7,8 +7,10 @@ export default function ContactUs() {
       <div className="container py-12 md:py-24 mt-56 mb-28">
         <div className="flex items-center space-x-10 md:px-20 mb-20">
           <div className="h-px bg-white w-2/5" />
+          <ParallaxSection type="zoom-out" speed={1.3}>
           <h2 className="text-3xl md:text-7xl font-medium"
           style={{ fontFamily: "Ysabeau" }}>Contact us</h2>
+          </ParallaxSection>
         </div>
         <div className="flex items-center gap-20 md:gap-40">
           <div className="relative h-[300px] md:h-[600px]">
